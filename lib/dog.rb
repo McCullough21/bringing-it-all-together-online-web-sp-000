@@ -68,8 +68,8 @@ def self.find_by_name(name)
   SQL
   DB[:conn].execute(sql, name).map do |row|
     dog = self.new_from_db(row)
+    dog
   end
-  dog
 end
 
 
