@@ -34,8 +34,8 @@ def self.create(hash)
 end
 def self.new_from_db(row)
   dog_hash = {
-    :id => row[0]
-    :name => row[1]
+    :id => row[0],
+    :name => row[1],
     :breed => row[2]
   }
   self.new(dog_hash)
