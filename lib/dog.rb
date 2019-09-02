@@ -62,7 +62,7 @@ def self.find_or_create_by(name:, breed:)
   end
   doggy
 end
-def self.find_by_name(name:)
+def self.find_by_name(name)
   sql = <<-SQL
   SELECT * FROM dogs WHERE name = ?
   SQL
